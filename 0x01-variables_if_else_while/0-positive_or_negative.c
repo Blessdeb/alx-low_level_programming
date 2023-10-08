@@ -1,31 +1,40 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
+/* betty is the best for function main goes there */
 /**
- * main - Entry point
- * Return: Always 0 (Success)
- 
- */int main(void)
-{
+* main - main function
+* Decription: Print negative or positive at the right conditions
+* Return: always 0
+*/
+
+int main(void) {
+
 	int n;
 
 	srand(time(0));
-	n = rand()  - RAND_MAX / 2;
 
-	printf("%d \n", n);
+	n = rand() - RAND_MAX / 2;
 
-	/* Our own code will go here */
+	/* your code goes here */
+
+
+	printf("n is: %d \n", n);
+
+
 	if (n > 0)
-	{
-		printf("The number is positive \n");
-	}
+
+		printf("%d is positive\n", n);
+
 	else if (n < 0)
-	{
-		printf("The number is negative \n");
-	}
+
+		printf("%d is negative\n", n);
+
 	else
-	{
-		printf("The number is zero \n");
-	}
-	return 0;
+		printf("%d is zero\n", n);
+
+
+	return (0);
 }
+
