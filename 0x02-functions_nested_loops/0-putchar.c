@@ -1,23 +1,21 @@
 #include "main.h"
 
 /**
-  * main - Entry point always
-  *
-  * Return: Always 0
-  */
+ * main - Entry point
+ *
+ * Decription: Prints without input or output
+ *
+ * Return: 0
+*/
+
 int main(void)
 {
+	char *str = "_putchar";
 
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	while (*str != '\0')
+	_putchar(*str++);
 	_putchar('\n');
 
 	return (0);
 }
-
 
