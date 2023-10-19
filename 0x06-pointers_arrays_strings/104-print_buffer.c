@@ -1,31 +1,51 @@
-
 #include "main.h"
+#include <stdio.h>
+
 /**
- * _strcat - concatenates two strings
- * @dest: input value
- * @src: input value
- *
+ * print_buffer - prints buffer
+ * @b: buffer
+ * @size: size
  * Return: void
  */
-char *_strcat(char *dest, char *src)
+
+void print_buffer(char *b, int size)
 {
-	int i;
-	int j;
+	int o, j, i;
 
-	i = 0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	j = 0;
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
+	o = 0;
 
-	dest[i] = '\0';
-	return (dest);
+	if (size <= 0)
+	{
+		printf("\n");
+		return;
+	}
+	while (o < size)
+	{
+		j = size - o < 10 ? size - o : 10;
+		printf("%08x: ", o);
+		for (i = 0; i < 10; i++)
+		{
+			if (i < j)
+				printf("%02x", *(b + o + i));
+			else
+				printf("  ");
+			if (i % 2)
+			{
+				printf(" ");
+			}
+		}
+		for (i = 0; i < j; i++)
+		{
+			int c = *(b + o + i);
+
+			if (c < 32 || c > 132)
+			{
+				c = '.';
+			}
+			printf("%c", c);
+		}
+		printf("\n");
+		o += 10;
+	}
 }
 
