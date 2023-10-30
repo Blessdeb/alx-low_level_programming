@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main: Main Entry-prints the minimum number of coins to make change for money
- * @argc: input argument count cents
- * @argv: input argument that contains coins
+ * main: Main Entry-prints the minimum number
+ * @argc: input argument count
+ * @argv: input argument
  * Return: Always 0 (success)
 **/
 int main(int argc, char *argv[]);
