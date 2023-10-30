@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main: prints the minimum number of coins to make change for money
- * @argc: argument count
- * argv: argument that contains variable
+ * main: Main Entry-prints the minimum number of coins to make change for money
+ * @argc: input argument count cents
+ * @argv: input argument that contains coins
  * Return: Always 0 (success)
 **/
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]);
 {
 int cents, coins = 0;
 
