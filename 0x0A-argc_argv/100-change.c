@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main: Main Entry-prints the minimum number
- * @argc: input argument count
- * @argv: input argument
+ * main - Main Entry - prints the minimum number of coins
+ * @argc: input
+ * @argv: input
  * Return: Always 0 (success)
 **/
 int main(int argc, char *argv[]);
