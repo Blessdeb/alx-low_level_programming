@@ -4,8 +4,8 @@
 #include <limits.h>
 
 /**
- * main - a program that multiplies two positive numbers
- * @argc: mu1, num1, num2
+ * main - multiplies two positive numbers
+ * @argc: n arguments
  * @argv: args
  * Return: int
 **/
