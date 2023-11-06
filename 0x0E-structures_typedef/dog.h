@@ -4,9 +4,9 @@
 
 /**
  * struct dog - a dog's file dimensions
- * @name: Storm
- * @age: float 3.5
- * @owner: Deb
+ * @name: name
+ * @age: age
+ * @owner: owner
  *
  * Description: Define a new type struct dog with the following elements
  */
